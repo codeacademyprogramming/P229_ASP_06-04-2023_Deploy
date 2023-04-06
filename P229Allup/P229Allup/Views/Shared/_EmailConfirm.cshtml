@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <style type="text/css">
+        @@media screen {
+            @@font-face {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 400;
+                src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff) format('woff');
+            }
+
+            @@font-face {
+                font-family: 'Lato';
+                font-style: normal;
+                font-weight: 700;
+                src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff) format('woff');
+            }
+
+            @@font-face {
+                font-family: 'Lato';
+                font-style: italic;
+                font-weight: 400;
+                src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+            }
+
+            @@font-face {
+                font-family: 'Lato';
+                font-style: italic;
+                font-weight: 700;
+                src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+            }
+        }
+
+        /* CLIENT-SPECIFIC STYLES */
+        body,
+        table,
+        td,
+        a {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+
+        table,
+        td {
+            mso-table-lspace: 0pt;
+            mso-table-rspace: 0pt;
+        }
+
+        img {
+            -ms-interpolation-mode: bicubic;
+        }
+
+        /* RESET STYLES */
+        img {
+            border: 0;
+            height: auto;
+            line-height: 100%;
+            outline: none;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse !important;
+        }
+
+        body {
+            height: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+        }
+
+        /* iOS BLUE LINKS */
+        a[x-apple-data-detectors] {
+            color: inherit !important;
+            text-decoration: none !important;
+            font-size: inherit !important;
+            font-family: inherit !important;
+            font-weight: inherit !important;
+            line-height: inherit !important;
+        }
+
+        /* MOBILE STYLES */
+        @@media screen and (max-width:600px) {
+            h1 {
+                font-size: 32px !important;
+                line-height: 32px !important;
+            }
+        }
+
+        /* ANDROID CENTER FIX */
+        div[style*="margin: 16px 0;"] {
+            margin: 0 !important;
+        }
+    </style>
+</head>
+
+<body style="background-color: #f4f4f4; margin: 0 !important; padding: 0 !important;">
+    <!-- HIDDEN PREHEADER TEXT -->
+    <div style="display: none; font-size: 1px; color: #fefefe; line-height: 1px; font-family: 'Lato', Helvetica, Arial, sans-serif; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden;"> We're thrilled to have you here! Get ready to dive into your new account.
+    </div>
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <!-- LOGO -->
+        <tr>
+            <td bgcolor="#FFA73B" align="center">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td align="center" valign="top" style="padding: 40px 10px 40px 10px;"> </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#FFA73B" align="center" style="padding: 0px 10px 0px 10px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td bgcolor="#ffffff" align="center" valign="top" style="padding: 40px 20px 20px 20px; border-radius: 4px 4px 0px 0px; color: #111111; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 48px; font-weight: 400; letter-spacing: 4px; line-height: 48px;">
+                            <h1 style="font-size: 48px; font-weight: 400; margin: 2;">Welcome!</h1> 
+                            <h1 style="font-size: 48px; font-weight: 400; margin: 2;">{{name}} {{surname}}!</h1> 
+                            <img src=" https://img.icons8.com/clouds/100/000000/handshake.png" width="125" height="120" style="display: block; border: 0px;" />
+                            <img src="data:image/png;base64,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" width="125" height="120" style="display: block; border: 0px;" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#f4f4f4" align="center" style="padding: 0px 10px 0px 10px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 40px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                            <p style="margin: 0;">We're excited to have you get started. First, you need to confirm your account. Just press the button below.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ffffff" align="left">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td bgcolor="#ffffff" align="center" style="padding: 20px 30px 60px 30px;">
+                                        <table border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td align="center" style="border-radius: 3px;" bgcolor="#FFA73B"><a href="{{url}}" target="_blank" style="font-size: 20px; font-family: Helvetica, Arial, sans-serif; color: #ffffff; text-decoration: none; color: #ffffff; text-decoration: none; padding: 15px 25px; border-radius: 2px; border: 1px solid #FFA73B; display: inline-block;">Confirm Account</a></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr> <!-- COPY -->
+                    <tr>
+                        <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 0px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                            <p style="margin: 0;">If that doesn't work, copy and paste the following link in your browser:</p>
+                        </td>
+                    </tr> <!-- COPY -->
+                    <tr>
+                        <td bgcolor="#ffffff" align="left" style="padding: 20px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                            <p style="margin: 0;"><a href="#" target="_blank" style="color: #FFA73B;">https://bit.li.utlddssdstueincx</a></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 20px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                            <p style="margin: 0;">If you have any questions, just reply to this email&mdash;we're always happy to help out.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#ffffff" align="left" style="padding: 0px 30px 40px 30px; border-radius: 0px 0px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                            <p style="margin: 0;">Cheers,<br>BBB Team</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#f4f4f4" align="center" style="padding: 30px 10px 0px 10px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td bgcolor="#FFECD1" align="center" style="padding: 30px 30px 30px 30px; border-radius: 4px 4px 4px 4px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 18px; font-weight: 400; line-height: 25px;">
+                            <h2 style="font-size: 20px; font-weight: 400; color: #111111; margin: 0;">Need more help?</h2>
+                            <p style="margin: 0;"><a href="#" target="_blank" style="color: #FFA73B;">We&rsquo;re here to help you out</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#f4f4f4" align="center" style="padding: 0px 10px 0px 10px;">
+                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="max-width: 600px;">
+                    <tr>
+                        <td bgcolor="#f4f4f4" align="left" style="padding: 0px 30px 30px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;"> <br>
+                            <p style="margin: 0;">If these emails get annoying, please feel free to <a href="#" target="_blank" style="color: #111111; font-weight: 700;">unsubscribe</a>.</p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

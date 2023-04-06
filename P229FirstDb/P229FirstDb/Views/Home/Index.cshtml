@@ -1,0 +1,26 @@
+﻿@model IEnumerable<Group>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<ul>
+    @foreach (Group group in Model)
+    {
+        <li>@group.Name @group.StudentCount
+            <ul>
+                @foreach (Student student in group.Students)
+                {
+                    <li>@student.Name @student.SurName</li>
+                }
+            </ul>
+            <ul>
+                @foreach (GroupTeacher groupTeacher in group.GroupTeachers)
+                {
+                    <li>@groupTeacher.Teacher.Name</li>
+                }
+            </ul>
+        </li>
+    }
+</ul>

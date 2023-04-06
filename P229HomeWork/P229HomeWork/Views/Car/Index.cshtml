@@ -1,0 +1,15 @@
+﻿@model List<Car>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<ul>
+    @foreach (Car car in Model)
+    {
+        <li>
+            <a asp-action="detail" asp-controller="car" asp-route-id="@car.Id">@car.Name</a>
+        </li>
+    }
+</ul>

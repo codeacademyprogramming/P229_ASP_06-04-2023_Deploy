@@ -1,0 +1,18 @@
+﻿@model Student
+
+@{
+    ViewBag.name = "Test";
+    int a = 5;
+}
+@(a > 5 ? "Test":"Edu")
+
+
+<h1>Home Index </h1>
+<h1>Home Index @a</h1>
+<h2>@ViewData["name"]</h2>
+<h2>@ViewData["age"]</h2>
+<h2>@ViewBag.age</h2>
+<h2>@ViewBag.Name</h2>
+<h2>@TempData["Name"]</h2>
+@*<h2>@student.Name @student.SurName</h2>*@
+<h2>@Model.Name @Model.SurName</h2>

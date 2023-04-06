@@ -1,0 +1,15 @@
+﻿@model List<Student>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Student Index</h1>
+<h2>Student List</h2>
+<ul>
+    @foreach (Student student in Model)
+    {
+        <li>
+            <a asp-action="detail" asp-controller="student" asp-route-id="@student.Id">@student.Name @student.SurName</a>
+        </li>
+    }
+</ul>

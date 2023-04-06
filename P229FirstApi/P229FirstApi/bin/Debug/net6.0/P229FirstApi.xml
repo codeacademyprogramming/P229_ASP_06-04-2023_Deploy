@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>P229FirstApi</name>
+    </assembly>
+    <members>
+        <member name="T:P229FirstApi.Controllers.v2.CategoriesController">
+            <summary>
+            Categories Services
+            </summary>
+        </member>
+        <member name="M:P229FirstApi.Controllers.v2.CategoriesController.Post(P229FirstApi.DTOs.CategroryDTOs.CategoryPostDTo)">
+            <summary>
+            Creates an Category.
+            </summary>
+            <remarks>
+            Sample request:
+            
+                POST api/Employee
+                {        
+                  "name": "Test"      
+                }
+            </remarks>
+            <param name="category"></param>
+            <returns>A newly created category Id</returns>
+            <response code="201">Returns the newly created Id</response>
+            <response code="400">InCorrect Object</response>          
+            <response code="409">Same Name Category</response>          
+        </member>
+        <member name="M:P229FirstApi.Controllers.v2.CategoriesController.Get">
+            <summary>
+            Get List Of Category
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
